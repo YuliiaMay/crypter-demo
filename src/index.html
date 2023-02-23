@@ -1,14 +1,300 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>Crypter.</title>
+
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Fraunces:opsz@9..144&family=Inter&family=Poppins:wght@400;500;600;700&family=Rowdies:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="./sass/index.scss" /> -->
+    
   </head>
-  <body>
+  <body class="body">
+
+    <!-- ❗️❗️❗️ HEADER -->
+    <header class="header">
+      <div class="conteiner header__conteiner">
+        <nav class="nav">
+          <a class="logo__link link" href="">
+            <!-- <img class="logo__icon img" src="" alt=""> -->
+            <span class="logo__text">crypter</span>
+          </a>
+
+          <button class="menu-btn btn"
+            type="button" 
+            aria-expanded="false" 
+            aria-controls="mobile-menu">
+            Х
+          </button>              
+        </nav>
+      </div>
+    </header>
+
+  
+    <main class="page">
+    <!-- ❗️❗️❗️ Content Blocks -->
+      <section class="content-blocks">
+        <div class="conteiner content-blocks__conteiner">
+          <p class="content-blocks__descr">Create, explore, & collect digital art NFTs.</p>
+          <h1 class="content-blocks__heading">The new creative economy.</h1>
+          <button class="content-blocks__btn btn" type="button"></button>
+            <span class="content-blocks__btn-text"> Start your search </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ❗️❗️❗️ Auction -->
+      <section class="auction">
+        <div class="conteiner auction__conteiner">
+          <!-- <img src="" alt=""> -->
+          <!-- <img src="" alt=""> -->
+
+          <div class="auction__info">
+            <h2 class="auction__name">Marco carrillo®</h2>
+            <div class="auction__info-block-1">
+              <div class="auction__creator-box"></div>
+              <div class="auction__price-box"></div>
+            </div>
+            <div class="auction__info-block-2">
+              <p>Current Bid</p>
+              <p>1.00 ETH</p>
+              <p>$3,618.36</p>
+              
+              <div class="auction__timer-block"> 
+                <p class="auction__timer-title">Auction ending in</p>
+                  <div class="timer">
+                    <div class="timer__field">
+                      <span class="timer__value" data-days>00</span>
+                      <span class="timer__label">days</span>
+                    </div>
+                    <div class="timer__field">
+                      <span class="timer__value" data-hours>00</span>
+                      <span class="timer__label">hrs</span>
+                    </div>
+                    <div class="timer__field">
+                      <span class="timer__value" data-minutes>00</span>
+                      <span class="timer__label">mins</span>
+                    </div>
+                    <div class="timer__field">
+                      <span class="timer__value" data-seconds>00</span>
+                      <span class="timer__label">secs</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="auction__btn-bid">
+            <span>Place a bid</span>
+          </button>
+          <button class="auction__btn-view-item">
+            <span>View item</span>
+          </button>
+        </div>
+
+        <div class="auction__slider slider"></div>>
+          <!-- <img class="auction__slider-left" src="" alt=""> -->
+          <!-- <img class="auction__slider-right" src="" alt=""> -->
+        </div>
+      </section>
+
+      <!-- ❗️❗️❗️ Feed -->
+      <section class="feed">
+        <div class="conteiner feed__conteiner">
+          <!-- <img class="feed__item-img" src="" alt=""> -->
+          <div class="feed__info">
+            <!-- <img class="feed__creator-img" src="" alt=""> -->
+            <div class="feed__descr-2">
+              <p class="feed__descr-2-name">The future of ETH®</p>
+              <p class="feed__descr-2-number">18 in stock</p>
+            </div>
+            <div class="feed__descr-3">
+              <p class="feed__descr-3-title">Highest bid</p>
+              <p class="feed__descr-3-price">1.125 ETH</p>
+            </div>
+
+            <div class="feed__line"></div>
+
+            <div class="feed__carousel">
+              <h3 class="feed__carousel-title">Latest upload from creators 🔥</h3>
+              <div class="feed__carousel-card">
+                <div class="feed__carousel-card-number">6</div>
+                <!-- <img class="feed__carousel-card-img" src="" alt=""> -->
+                <p class="feed__carousel-card-name">Payton Harris</p>
+                <p class="feed__carousel-card-price">
+                  2.456
+                  <span class="feed__carousel-card-currency">ETH</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ❗️❗️❗️ TOP creators -->
+      <section class="top-creators">
+        <div class="conteiner top-creators__conteiner">
+          <h4 class="top-creators__title title">
+            <span class="top-creators__title-add">Popular</span>
+            Sellers
+          </h4>
+          <!-- <img src="" alt=""> -->
+          <p class="top-creators__timeframe">timeframe</p>
+          <div class="top-creators__choice">
+            <p class="top-creators__choice-placeholder">Today</p>
+            <!-- <img src="" alt=""> -->
+          </div>
+
+          <div class="top-creators-slider">
+            <ul class="top-creators-list">
+              <li class="top-creators-item">
+                <div class="top-creators-item-icons">
+                  <div class="top-creators-item-place">#1</div>
+                  <!-- <img src="" alt=""> -->
+                  <!-- <img src="" alt=""> -->
+                </div>
+                <div class="top-creators-card">
+                  <!-- <img src="" alt=""> -->
+                  <!-- <img src="" alt=""> -->
+                  <p class="top-creators-card-name">Payton Harris</p>
+                  <p class="top-creators-card-price">
+                    2.456
+                    <span class="top-creators-card-currency">ETH</span>
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="top-creators__slider slider"></div>>
+              <!-- <img class="auction__slider-left" src="" alt=""> -->
+              <!-- <img class="auction__slider-right" src="" alt=""> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ❗️❗️❗️ HOT BID -->
+      <section class="hot-bid">
+        <div class="conteiner hot-bid__conteiner">
+          <h4 class="hot-bid__title title">Hot bid</h4>
+          <div class="hot-bid__slider slider"></div>>
+            <!-- <img class="hot-bid__slider-left" src="" alt=""> -->
+            <!-- <img class="hot-bid__slider-right" src="" alt=""> -->
+          </div>
+
+          <ul class="hot-bid__list">
+            <li class="hot-bid__item">
+              <!-- <img class="hot-bid__img" src="" alt=""> -->
+              <div class="hot-bid__item-meta">
+                <p class="hot-bid__item-meta-title">Amazing digital art</p>
+                <p class="hot-bid__item-meta-price">2.45 ETH</p>
+                <div>
+                  <!-- <img src="" alt=""> -->
+                  <!-- <img src="" alt=""> -->
+                  <!-- <img src="" alt=""> -->
+                  <p class="hot-bid__item-meta-stock">3 in stock</p>
+                </div>
+                <div>
+                  <div class="hot-bid__item-meta-rating">
+                    <!-- <img class="hot-bid__item-meta-rating-icon" src="" alt=""> -->
+                    <p class="hot-bid__item-meta-rating-title">Highest bid</p>
+                    <p class="hot-bid__item-meta-rating-level">0.001 ETH</p>
+                  </div>
+                  <p class="hot-bid__item-meta-rating-title">New bid 🔥</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ❗️❗️❗️ Hot collections -->
+      <section class="hot-collections">
+        <div class="conteiner hot-collections__conteiner">
+          <h4 class="hot-collections__title title">Hot collections</h4>
+        </div>
+        <div class="hot-collections__gallery">
+          <!-- <img class="hot-collections__gallery-main-img img" src="" alt=""> -->
+          <div class="hot-collections__gallery-list">
+            <!-- <img class="hot-collections__gallery-img img" src="" alt=""> -->
+            <!-- <img class="hot-collections__gallery-img img" src="" alt=""> -->
+            <!-- <img class="hot-collections__gallery-img img" src="" alt=""> -->
+          </div>
+        </div>
+        <p class="hot-collections__subtitle">Awesome collection</p>
+        <div class="hot-collections__meta">
+          <!-- <img class="hot-collections__meta-icon" src="" alt=""> -->
+          <p class="hot-collections__meta-author">By Lenny Toy</p>
+          <p class="hot-collections__meta-count">28 items</p>
+        </div>
+
+        <div class="hot-collections__slider slider">
+          <!-- <img class="hot-collections__slider-left" src="" alt=""> -->
+          <!-- <img class="hot-collections__slider-right" src="" alt=""> -->
+        </div>
+
+        
+      </section>
+
+      <!-- ❗️❗️❗️ CTA -->
+      <section class="content-blocks">
+        <div class="conteiner content-blocks__conteiner">
+
+        </div>
+      </section>
+
+      <!-- ❗️❗️❗️ Discover -->
+
+
+    </main>
+    <!-- ❗️❗️❗️ Footer -->
+    <footer class="footer">
+      <div class="conteiner footer__conteiner">
+        <div class="footer__main">
+          <a class="logo__link link" href="">
+            <!-- <img class="logo__icon img" src="" alt=""> -->
+            <span class="logo__text">crypter</span>
+          </a>
+          <span class="logo__slogan">Let’s make a great design togerther</span>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- випадаючі списки -->
+        <div class="footer__drop-down-menu">Crypter.</div>
+        <div class="line"></div>
+        <div class="footer__drop-down-info">info</div>
+        <div class="line"></div>
+
+        <div class="footer__join-form">
+          <p class="footer__join-form-title">Join Newsletter</p>
+          <p class="footer__join-form-descr">Subscribe our newsletter to get more free design course and resource</p>
+        </div>
+
+
+          <input class="footer__join-form-input" type="email" placeholder="Enter your email">
+          <button class="footer__join-form-btn" type="button">
+            <!-- <img class="footer__join-form-btn-icon" src="" alt=""> -->
+          </button>
+
+        <div class="line"></div>
+
+        <p class="footer__license-info">Copyright © 2021 UI8 LLC. All rights reserved</p>
+      </div>
+
+    </footer>
+
+
+      
+
+
+
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <!-- <include src="./partials/example.html"></include> -->
+    <!-- <script type="module" src="./js/index.js"></script> -->
   </body>
 </html>
